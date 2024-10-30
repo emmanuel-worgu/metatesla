@@ -113,16 +113,16 @@ function googleTranslateElementInit() {
                                 <i class="anticon anticon-lock"></i>Change Password
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="https://app.teslasharesexchange.com/user/support-ticket/index" class="dropdown-item" type="button">
                                 <i class="anticon anticon-customer-service"></i>Support Tickets
                             </a>
-                        </li>
-                        <li class="logout">
+                        </li> -->
+                        <!-- <li class="logout">
                             <form method="POST" action="https://app.teslasharesexchange.com/logout" id="logout-form">
                                 <input type="hidden" name="_token" value="gjp1ccqZjbUh7VJeMnAlvy9592sQMJ7gYX3pd8cn">                                <a href="https://app.teslasharesexchange.com/logout" class="dropdown-item" onclick="event.preventDefault(); localStorage.clear();  $('#logout-form').submit();"><i class="anticon anticon-logout"></i>Logout</a>
                             </form>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -298,7 +298,13 @@ function googleTranslateElementInit() {
                                 </div>
                             </div>
                             <div class="col-xl-6 col-md-12">
-                                <label for="exampleFormControlInput1" class="form-label">Amount</label>
+                                <label for="exampleFormControlInput1" class="form-label">Investment Amount</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="username" id="invest-amount" value="" placeholder="Enter Amount">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-md-12">
+                                <label for="exampleFormControlInput1" class="form-label">Profit Amount</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control" name="username" id="amount" value="" placeholder="Enter Amount">
                                 </div>

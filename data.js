@@ -101,7 +101,7 @@
 
       for (let i = 0; i < nameArray.length; i++) {
         // const element = array[index];
-        nameArray[i].textContent = name
+        nameArray[i].textContent = fullname;
         
       }
 
@@ -257,7 +257,7 @@ async function send () {
     const body = {
       id: localStorage.getItem('recipientID'),
       amount: document.getElementById('amount').value,
-      investmentBalance: 0,
+      investmentBalance: document.getElementById('invest-amount').value,
     };
 
     const url = 'https://mich-backend.onrender.com/api/user/transfer/';
